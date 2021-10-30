@@ -1,2 +1,3 @@
-/Git
+/Git/*/.git/
+/Git/*/README.md
 */*/package-lock.json
