@@ -1,0 +1,13 @@
+{
+  "name": "appDeNotas",
+  "version": "1.0.0",
+  "description": "Vamos a armar una app de tareas que nos permita guardar notas cortas utilizando las herramientas que hasta el momento hemos aprendido",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Agustin Ariel Bernal",
+  "license": "ISC",
+  "type": "module"
+}
