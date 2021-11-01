@@ -1,0 +1,129 @@
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+}
+
+.yellow {
+  background-color: var(--amarillo);
+  height: 10px;
+}
+
+header {
+  background-color: var(--amarillo);
+}
+
+main {
+  background-color: var(--gris-claro);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: 15em;
+}
+
+header img {
+  height: 5rem;
+}
+
+nav p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+footer p {
+  color: var(--gris-oscuro);
+  font-weight: 400;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.beneficio {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+}
+
+strong {
+  font-size: 16px;
+}
+
+.bg-white {
+  background-color: var(--gris-claro);
+  border-width: 1px;
+  padding: 2px 0px 2px;
+  overflow: hidden;
+  width: 15em;
+}
+
+.button {
+  background-color: var(--gris-claro);
+  border-width: 1px;
+  padding: 2px;
+}
+
+main article {
+  background-color: white;
+  margin: 50px;
+  padding: 20px;
+}
+
+footer i {
+  color: var(--celeste);
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+footer section,
+article,
+.center {
+  text-align: center;
+}
+
+.burger-menu {
+  color: var(--gris-claro);
+  padding: 5px 4px;
+  background-color: var(--celeste);
+  border-radius: 3px;
+}
+
+footer {
+  background-color: white;
+  padding: 0;
+}
+
+.copyright {
+  margin-top: 40px;
+}
