@@ -5,14 +5,18 @@
   --gris-oscuro: #666;
   --gris-claro: #ebebeb;
   --verde: #39b54a;
+  box-sizing: border-box;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
   padding: 0;
   margin: 0;
   border-width: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 
 .yellow {
@@ -38,7 +42,7 @@ ul {
 }
 
 img {
-  height: 15em;
+  width: 20vw;
 }
 
 header img {
@@ -95,8 +99,10 @@ strong {
 
 main article {
   background-color: white;
-  margin: 50px;
-  padding: 20px;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-bottom: 1opx;
 }
 
 footer i {
@@ -126,4 +132,9 @@ footer {
 
 .copyright {
   margin-top: 40px;
+}
+
+li {
+  display: inline-block;
+  margin-left: 2rem;
 }
