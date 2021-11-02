@@ -5,13 +5,12 @@
   --gris-oscuro: #666;
   --gris-claro: #ebebeb;
   --verde: #39b54a;
-  box-sizing: border-box;
 }
 
 * {
   padding: 0;
   margin: 0;
-  border-width: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -42,11 +41,11 @@ ul {
 }
 
 img {
-  width: 20vw;
+  width: 10rem;
 }
 
 header img {
-  height: 5rem;
+  width: 10rem;
 }
 
 nav p {
@@ -99,10 +98,10 @@ strong {
 
 main article {
   background-color: white;
-  width: 30%;
+  width: 90vw;
   margin: auto;
-  margin-bottom: 50px;
-  padding-bottom: 1opx;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 footer i {
@@ -110,6 +109,10 @@ footer i {
   font-size: 2em;
   margin-top: 40px;
   margin-bottom: 10px;
+}
+
+nav input {
+  margin-left: 10px;
 }
 
 footer section,
@@ -135,6 +138,54 @@ footer {
 }
 
 li {
-  display: inline-block;
   margin-left: 2rem;
+}
+
+.descripcion {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.descripcion strong {
+  display: none;
+}
+
+nav ul {
+  display: none;
+}
+
+@media (min-width: 361px) {
+  .descripcion strong {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  main article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+@media (min-width: 769px) {
+  .descripcion strong {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  main article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 }
