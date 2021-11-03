@@ -51,7 +51,7 @@ header img {
   width: 10rem;
 }
 
-nav p {
+header p {
   text-align: center;
 }
 
@@ -163,6 +163,19 @@ footer {
 
 nav {
   display: none;
+  border: 2px solid red;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 5px;
+  border: 1px solid black;
+}
+
+.login-bar {
+  display: flex;
+  gap: 5px;
+  border: 1px solid black;
 }
 
 .descrip-producto {
