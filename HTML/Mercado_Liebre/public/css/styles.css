@@ -55,7 +55,7 @@ body {
 }
 
 .search-bar-input {
-  width: 50vw;
+  width: 70vw;
   font-family: "Roboto";
 }
 
@@ -80,7 +80,8 @@ body {
 
 .nav-bar,
 .login-bar {
-  gap: 10px;
+  font-size: 2.5vw;
+  gap: 0.5rem;
 }
 
 .nav ul {
@@ -100,9 +101,14 @@ body {
   padding: 0.7rem 0.9rem;
 }
 
-@media (min-width: 755px) {
+@media (min-width: 425px) {
   .top-bar {
     flex-wrap: nowrap;
+  }
+
+  .copy-header-line,
+  .copy-header-block {
+    font-size: 10px;
   }
 
   .copy-header-line {
@@ -111,11 +117,12 @@ body {
 
   .copy-header-block {
     display: block;
+    font-size: 2.5vw;
     margin-right: 2rem;
   }
 
   .search-bar-input {
-    width: 70vw;
+    width: 40vw;
     max-width: 40rem;
   }
 
@@ -125,6 +132,14 @@ body {
 
   .burger-menu {
     display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .copy-header-block,
+  .nav-bar,
+  .login-bar {
+    font-size: 1.5rem;
   }
 }
 
