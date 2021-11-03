@@ -1,0 +1,60 @@
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--amarillo);
+}
+
+.logo {
+  width: 13rem;
+  padding: 1rem 0.5rem;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar-input {
+  height: 3rem;
+  width: 15rem;
+  font-family: "Roboto";
+}
+
+.search-bar-button {
+  width: 3rem;
+}
+
+.copy-header {
+  text-align: center;
+  margin: auto;
+}
+
+.nav-bar {
+  border: 0.1rem solid red;
+}
