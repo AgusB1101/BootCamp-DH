@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -22,27 +22,36 @@
   <body>
     <header class="header">
       <div class="top-bar">
-        <img
-          src="img/logo-mercado-liebre.svg"
-          alt="Logo Mercado Liebre"
-          class="logo"
-        />
-        <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Buscar productos, marcas y más"
-            class="search-bar-input"
+        <div class="left-top-bar">
+          <img
+            src="img/logo-mercado-liebre.svg"
+            alt="Logo Mercado Liebre"
+            class="logo"
           />
+          <div class="search-bar">
+            <input
+              type="search"
+              placeholder="Buscar productos, marcas y más"
+              class="search-bar-input"
+            />
 
-          <button class="search-bar-button">
-            <i class="fas fa-search"></i>
-          </button>
+            <button class="search-bar-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
 
-        <p class="copy-header">
+        <p class="copy-header-line">
           <i class="fas fa-hand-holding-usd"></i>
-          Comprá en cuotas y sin tarjeta de crédito
+          Comprá en cuotas sin tarjeta de crédito
         </p>
+        <div class="copy-header-block">
+          <p>
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas sin
+          </p>
+          <p>tarjeta de crédito</p>
+        </div>
       </div>
 
       <nav class="nav">
@@ -79,5 +88,123 @@
         </button>
       </nav>
     </header>
+    <main class="main">
+      <section class="last-visited">
+        <h2 class="last-visited-title">Basado en tu última visita</h2>
+
+        <article class="product">
+          <img
+            src="img/img-cafetera-moulinex.jpg"
+            alt="Cafetera Moulinex"
+            class="img-product"
+          />
+          <p class="price">$6.770</p>
+          <p class="discount">40% OFF</p>
+          <p class="description">Cafetera Moulinex</p>
+        </article>
+        <article class="product">
+          <img
+            src="img/img-macbook-pro-2019.jpg"
+            alt="MacBook Pro 2019"
+            class="img-product"
+          />
+          <p class="price">$230.000</p>
+          <p class="discount">20% OFF</p>
+          <p class="description">MacBook Pro 2019</p>
+        </article>
+        <article class="product">
+          <img
+            src="img/img-samsung-galaxy-s10.jpg"
+            alt="Samsung Galaxy S10"
+            class="img-product"
+          />
+          <p class="price">$70.500</p>
+          <p class="discount">10%</p>
+          <p class="description">Samsung Galaxy S10</p>
+        </article>
+        <article class="product">
+          <img
+            src="img/img-tv-samsung-smart.jpg"
+            alt='SmartTv Samsung 43"'
+            class="img-product"
+          />
+          <p class="price">$23.200</p>
+          <p class="discount">5% OFF</p>
+          <p class="description">SmartTv Samsung 43"</p>
+        </article>
+      </section>
+
+      <section class="offers">
+        <h2 class="offers-title">Ofertas</h2>
+
+        <article class="product">
+          <img
+            src="img/img-cafetera-moulinex.jpg"
+            alt="Cafetera Moulinex"
+            class="img-product"
+          />
+          <p class="price">$6.770</p>
+          <p class="discount">40% OFF</p>
+          <p class="description">Cafetera Moulinex</p>
+        </article>
+        <article class="product">
+          <img
+            src="img/img-macbook-pro-2019.jpg"
+            alt="MacBook Pro 2019"
+            class="img-product"
+          />
+          <p class="price">$230.000</p>
+          <p class="discount">20% OFF</p>
+          <p class="description">MacBook Pro 2019</p>
+        </article>
+        <article class="product">
+          <img
+            src="img/img-samsung-galaxy-s10.jpg"
+            alt="Samsung Galaxy S10"
+            class="img-product"
+          />
+          <p class="price">$70.500</p>
+          <p class="discount">10%</p>
+          <p class="description">Samsung Galaxy S10</p>
+        </article>
+        <article class="product">
+          <img
+            src="img/img-tv-samsung-smart.jpg"
+            alt='SmartTv Samsung 43"'
+            class="img-product"
+          />
+          <p class="price">$23.200</p>
+          <p class="discount">5% OFF</p>
+          <p class="description">SmartTv Samsung 43"</p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer-benefit">
+        <h3 class="benefit-title">Pagá con tarjeta o en efectivo</h3>
+        <p class="benefit-description">
+          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+          efectivo en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
+
+      <section class="footer-benefit">
+        <h3 class="benefit-title">Envío gratis desde $ 2.500</h3>
+        <p class="benefit-description">
+          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
+      <section class="footer-benefit">
+        <h3 class="benefit-title">Seguridad, de principio a fin</h3>
+        <p class="benefit-description">
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+          hacer, porque estás siempre protegid@.
+        </p>
+      </section>
+      <section class="footer-copyright">
+        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </section>
+    </footer>
   </body>
 </html>
