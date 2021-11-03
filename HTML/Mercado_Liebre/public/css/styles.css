@@ -11,6 +11,8 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 html {
@@ -21,6 +23,11 @@ html {
 
 body {
   font-size: 1.5rem;
+  height: 100vh;
+}
+
+.header {
+  background-color: var(--amarillo);
 }
 
 .top-bar {
@@ -28,7 +35,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--amarillo);
 }
 
 .logo {
@@ -38,16 +44,16 @@ body {
 
 .search-bar {
   display: flex;
+  height: 3rem;
 }
 
 .search-bar-input {
-  height: 3rem;
-  width: 15rem;
+  width: 90%;
   font-family: "Roboto";
 }
 
 .search-bar-button {
-  width: 3rem;
+  width: 10%;
 }
 
 .copy-header {
@@ -55,6 +61,37 @@ body {
   margin: auto;
 }
 
-.nav-bar {
-  border: 0.1rem solid red;
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
+
+.nav ul {
+  display: none;
+}
+
+.nav a {
+  color: var(--azul);
+}
+
+.burger-menu {
+  color: white;
+  background-color: var(--celeste);
+  border: none;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.9rem;
+}
+
+@media (min-width: 590px) {
+  .top-bar {
+  }
+
+  .nav ul {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+} ;
