@@ -26,6 +26,9 @@ body {
   font-size: 1.5rem;
   background-color: var(--gris-claro);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -204,6 +207,7 @@ body {
 .footer {
   background-color: white;
   text-align: center;
+  position: relative;
 }
 
 .footer-benefit i {
