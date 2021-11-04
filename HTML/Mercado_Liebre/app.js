@@ -6,17 +6,16 @@ const PORT = 3000;
 console.clear();
 
 app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.listen(PORT, () => console.log("Server listening on port " + PORT));
 
-app.get("/", (_, res) =>
-  res.sendFile(path.join(__dirname, "/views/home.html"))
-);
+app.get("/", (_, res) => res.render("home"));
 
 app.get("/register", (_, res) => {
-  res.sendFile(path.join(__dirname, "./views/register.html"));
+  res.render("register");
 });
 
 app.get("/login", (_, res) => {
-  res.sendFile(path.join(__dirname, "./views/login.html"));
+  res.render("login");
 });
