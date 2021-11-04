@@ -9,6 +9,11 @@
   color: var(--gris-oscuro);
 }
 
+.register input:focus,
+.login input:focus {
+  outline-color: var(--celeste);
+}
+
 .full-name,
 .new-username,
 .email,
