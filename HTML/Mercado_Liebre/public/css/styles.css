@@ -161,12 +161,16 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 2.5rem;
-  padding-bottom: 1rem;
 }
 
 .img-product {
   width: 100%;
   padding: 1.5rem;
+}
+
+.bottom-product {
+  padding: 1rem;
+  border-top: 0.1rem solid var(--gris-claro);
 }
 
 .discount {
@@ -206,7 +210,8 @@ body {
 }
 
 .footer-copyright {
-  padding: 1.8rem 0;
+  padding-top: 3rem;
+  padding-bottom: 1.8rem;
 }
 
 .copyright {
