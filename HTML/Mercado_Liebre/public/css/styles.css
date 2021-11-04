@@ -47,7 +47,7 @@ body {
   width: 20vw;
   min-width: 5rem;
   max-width: 13rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 }
 
 .search-bar {
@@ -76,10 +76,11 @@ body {
 
 .nav {
   display: flex;
+  padding: 0.8rem 0.3rem;
   justify-content: space-between;
 }
 
-.nav-bar,
+.site-bar,
 .login-bar {
   font-size: 2.5vw;
   gap: 0.5rem;
@@ -102,46 +103,10 @@ body {
   padding: 0.7rem 0.9rem;
 }
 
-@media (min-width: 425px) {
-  .top-bar {
-    flex-wrap: nowrap;
-  }
-
-  .copy-header-line,
-  .copy-header-block {
-    font-size: 10px;
-  }
-
-  .copy-header-line {
-    display: none;
-  }
-
-  .copy-header-block {
-    display: block;
-    font-size: 2.5vw;
-    margin-right: 2rem;
-  }
-
-  .search-bar-input {
-    width: 40vw;
-    max-width: 40rem;
-  }
-
-  .nav ul {
-    display: flex;
-  }
-
-  .burger-menu {
-    display: none;
-  }
-}
-
-@media (min-width: 600px) {
-  .copy-header-block,
-  .nav-bar,
-  .login-bar {
-    font-size: 1.5rem;
-  }
+.main .last-visited,
+.main .offers {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .banner {
@@ -156,11 +121,12 @@ body {
 }
 
 .product {
-  text-align: center;
+  text-align: left;
   background-color: white;
   width: 80%;
   margin: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  flex-basis: 60%;
 }
 
 .img-product {
@@ -189,6 +155,12 @@ body {
   top: -1.5rem;
 }
 
+.price-discount {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
 .discount {
   font-size: 1rem;
   color: var(--verde);
@@ -197,7 +169,9 @@ body {
 .description {
   font-size: 1rem;
   font-weight: 500;
+  margin-top: 1rem;
   color: var(--gris-oscuro);
+  display: none;
 }
 
 .footer {
@@ -232,4 +206,61 @@ body {
 
 .copyright {
   font-size: 1rem;
+}
+
+@media (min-width: 425px) {
+  .top-bar {
+    flex-wrap: nowrap;
+  }
+
+  .copy-header-line,
+  .copy-header-block {
+    font-size: 10px;
+  }
+
+  .copy-header-line {
+    display: none;
+  }
+
+  .copy-header-block {
+    display: block;
+    font-size: 2.5vw;
+    margin-right: 2rem;
+  }
+
+  .search-bar-input {
+    width: 40vw;
+    max-width: 40rem;
+  }
+
+  .nav ul {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    flex-basis: 45%;
+  }
+
+  .description {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  .copy-header-block,
+  .site-bar,
+  .login-bar {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .product {
+    flex-basis: 23%;
+  }
 }
