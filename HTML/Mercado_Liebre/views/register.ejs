@@ -36,7 +36,47 @@
           placeholder="Domicilio"
         />
 
-        <h3 class="user-profile">Perfil del usuario</h3>
+        <h3 class="user-profile-title">Perfil del usuario</h3>
+
+        <div class="user-profile-options">
+          <label class="user-profile-option">
+            <input type="radio" name="user-profile" value="Comprador" checked />
+            Comprador
+          </label>
+          <label class="user-profile-option">
+            <input type="radio" name="user-profile" id="Vendedor" />
+            Vendedor
+          </label>
+        </div>
+
+        <h3 class="interests-title">Intereses</h3>
+
+        <label class="interests-option"
+          ><input
+            type="checkbox"
+            name="interest"
+            value="Electro"
+          />Electro</label
+        >
+        <label class="interests-option"
+          ><input type="checkbox" name="interest" value="Moda" />Moda</label
+        >
+        <label class="interests-option"
+          ><input type="checkbox" name="interest" value="Hogar" />Hogar</label
+        >
+        <label class="interests-option"
+          ><input
+            type="checkbox"
+            name="interest"
+            value="Juguetería"
+          />Jugetería</label
+        >
+        <label class="interests-option"
+          ><input type="checkbox" name="interest" value="Vida_Sana" />Vida
+          Sana</label
+        >
+
+        <button class="sign-up-btn">Crear cuenta</button>
       </form>
     </main>
     <%- include("./partials/footer") %>

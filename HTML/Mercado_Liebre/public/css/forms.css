@@ -6,6 +6,7 @@
   margin: auto;
   padding: 2rem;
   width: 70vw;
+  color: var(--gris-oscuro);
 }
 
 .full-name,
@@ -15,7 +16,8 @@
 .birthday,
 .password,
 .address,
-.sign-in-btn {
+.sign-in-btn,
+.sign-up-btn {
   height: 3rem;
   font-size: 1rem;
   font-weight: 500;
@@ -34,14 +36,49 @@
   margin-top: 3rem;
 }
 
-.sign-in-btn {
+.sign-in-btn,
+.sign-up-btn {
   color: var(--gris-claro);
   background-color: var(--celeste);
 }
 
 .birthday-title,
-.user-profile {
+.user-profile-title,
+.interests-title {
   align-self: flex-start;
   color: var(--gris-oscuro);
   margin: 2rem 0;
+}
+
+.user-profile-options {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-option,
+.interests-option {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.user-profile-option {
+  padding: 0 1rem;
+}
+
+.interests-option {
+  padding: 0.5rem 0;
+}
+
+.user-profile-option input,
+.interests-option input {
+  border-color: var(--gris-oscuro);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.sign-up-btn {
+  margin-top: 3rem;
 }

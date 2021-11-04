@@ -93,13 +93,17 @@ body {
   margin: auto;
 }
 
+.copy-header-line {
+  padding-top: 0.8rem;
+}
+
 .copy-header-block {
   display: none;
 }
 
 .nav {
   display: flex;
-  padding: 0.8rem 0.3rem;
+  padding: 0.5rem;
   justify-content: space-between;
 }
 
