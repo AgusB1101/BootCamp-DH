@@ -169,8 +169,24 @@ body {
 }
 
 .bottom-product {
-  padding: 1rem;
+  padding: 1.5rem;
   border-top: 0.1rem solid var(--gris-claro);
+  position: relative;
+}
+
+.fa-truck {
+  color: var(--verde);
+  display: block;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid var(--verde);
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 2rem;
+  top: -1.5rem;
 }
 
 .discount {
