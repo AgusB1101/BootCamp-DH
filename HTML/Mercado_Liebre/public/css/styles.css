@@ -23,6 +23,7 @@ html {
 
 body {
   font-size: 1.5rem;
+  background-color: var(--gris-claro);
   height: 100vh;
 }
 
@@ -143,11 +144,11 @@ body {
   }
 }
 
-.main {
-  background-color: var(--gris-claro);
+.banner {
+  width: 100%;
 }
 
-h2 {
+.section-title {
   color: var(--gris-oscuro);
   font-weight: 700;
   font-size: 2.2rem;
@@ -159,7 +160,7 @@ h2 {
   background-color: white;
   width: 80%;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 1rem;
 }
 
@@ -180,23 +181,28 @@ h2 {
 }
 
 .footer {
+  background-color: white;
   text-align: center;
 }
 
 .footer-benefit i {
-  color: var(--azul);
+  color: var(--celeste);
+  font-size: 2rem;
+  padding-top: 3rem;
 }
 
 .benefit-title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.8rem 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+  padding-top: 0.5rem;
 }
 
 .benefit-description {
   font-size: 1rem;
+  color: var(--gris-oscuro);
   margin: auto;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .footer-copyright {
