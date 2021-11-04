@@ -1,0 +1,34 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.username,
+.password,
+.send-btn {
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 70vw;
+  padding-left: 0.8rem;
+  font-family: "Roboto";
+  border-radius: 0.5rem;
+}
+
+.username {
+  margin-top: 2rem;
+}
+
+.password {
+  margin: 3rem 0;
+}
+
+.send-btn {
+  margin-bottom: 2rem;
+  color: var(--gris-claro);
+  background-color: var(--celeste);
+}
