@@ -1,34 +1,47 @@
+.register,
 .login {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin: auto;
+  padding: 2rem;
+  width: 70vw;
 }
 
+.full-name,
+.new-username,
+.email,
 .username,
+.birthday,
 .password,
-.send-btn {
+.address,
+.sign-in-btn {
   height: 3rem;
   font-size: 1rem;
   font-weight: 500;
   height: 3rem;
-  width: 70vw;
   padding-left: 0.8rem;
   font-family: "Roboto";
   border-radius: 0.5rem;
 }
 
-.username {
-  margin-top: 2rem;
-}
-
+.new-username,
 .password {
   margin: 3rem 0;
 }
 
-.send-btn {
-  margin-bottom: 2rem;
+.address {
+  margin-top: 3rem;
+}
+
+.sign-in-btn {
   color: var(--gris-claro);
   background-color: var(--celeste);
+}
+
+.birthday-title,
+.user-profile {
+  align-self: flex-start;
+  color: var(--gris-oscuro);
+  margin: 2rem 0;
 }

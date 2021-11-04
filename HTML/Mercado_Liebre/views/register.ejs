@@ -3,7 +3,42 @@
   <%- include("./partials/head") %>
   <body>
     <%- include('./partials/header') %>
-    <main></main>
+    <main>
+      <form action="/" , method="get" class="register">
+        <input
+          type="text"
+          name="full-name"
+          placeholder="Nombre y Apellido"
+          class="full-name"
+        />
+
+        <input
+          type="text"
+          name="new-username"
+          placeholder="Nombre de Usuario"
+          class="new-username"
+        />
+
+        <input
+          type="email"
+          name="user-email"
+          placeholder="E-mail"
+          class="email"
+        />
+
+        <h3 class="birthday-title">Fecha de nacimiento</h3>
+        <input type="date" name="birthday" class="birthday" />
+
+        <input
+          type="text"
+          name="address"
+          class="address"
+          placeholder="Domicilio"
+        />
+
+        <h3 class="user-profile">Perfil del usuario</h3>
+      </form>
+    </main>
     <%- include("./partials/footer") %>
   </body>
 </html>
