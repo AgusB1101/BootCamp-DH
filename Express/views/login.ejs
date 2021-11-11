@@ -4,18 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
   </head>
   <body>
     <% if(locals.errors) { %> <% errors.forEach(error => { %>
     <p><%= error.msg %></p>
     <% }) %> <% } %>
 
-    <form action="/register" method="post">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" value="<%= locals.old && old.name
-      ? old.name : "" %>"/>
-      <br />
+    <form action="/login" method="post">
       <label for="email">Email</label>
       <input type="email" id="email" name="email" value="<%= (locals.old &&
       old.email) ? old.email : "" %>"/>
@@ -25,9 +21,5 @@
       <br />
       <input type="submit" value="Enviar" />
     </form>
-
-    <% if (locals.mensajeDeRegistro) { %>
-    <p><%= mensajeDeRegistro %></p>
-    <% } %>
   </body>
 </html>
