@@ -273,7 +273,7 @@ body {
   }
 
   .product {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0.2rem 10px rgb(100, 100, 100);
     flex-basis: 45%;
   }
 
