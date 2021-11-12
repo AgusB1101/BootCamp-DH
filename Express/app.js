@@ -1,6 +1,7 @@
 const express = require("express");
 const session = require("express-session");
 const mainRoutes = require("./src/routes/mainRoutes");
+const userRoutes = require("./src/routes/userRoutes");
 
 const app = express();
 
@@ -15,5 +16,6 @@ app.use(
 );
 
 app.use("/", mainRoutes);
+app.use("/users", userRoutes);
 
 app.listen(3000, () => console.log("Server listening on port 3000"));
