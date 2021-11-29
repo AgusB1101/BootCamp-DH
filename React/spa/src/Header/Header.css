@@ -1,0 +1,14 @@
+.header {
+  background-color: #999;
+  border-bottom: 1px solid #666;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
